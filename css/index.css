@@ -260,3 +260,11 @@ header .top-bar .logo {
   width: 30%;
   margin-bottom: 30px;
 }
+.home .content-pick .destination .btn {
+  color: white;
+  border-radius: 12px;
+  background-color: #17a2b8;
+  font-size: 2.2rem;
+  padding: 10px;
+  text-align: center;
+}
