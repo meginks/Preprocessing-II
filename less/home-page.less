@@ -33,6 +33,9 @@ header {
     .text-content {
       width: 48%;
       padding-right: 1%;
+      @media @mobile {
+        width: 100%;
+      }
     }
 
     .img-content {
@@ -42,6 +45,12 @@ header {
       img {
         border-radius: 10px;
       }
+      @media @mobile {
+        width: 100%;
+      }
+    }
+    @media @mobile {
+      flex-direction: column;
     }
   }
 
@@ -58,6 +67,10 @@ header {
       padding-right: 1%;
       padding-left: 0;
     }
+
+   @media @mobile {
+      flex-direction: column-reverse;
+    }
   }
 
   .content-destination {
@@ -67,7 +80,12 @@ header {
     img {
       border-radius: 10px;
     }
-
+    @media @mobile {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
   }
 
   .content-pick {
@@ -80,7 +98,26 @@ header {
       width: 30%;
       margin-bottom: 30px;
       .btn {
-        .sign-up-btn(12px, 2.2rem, center);
+        .sign-up-btn(12px, 2.2rem, 1rem, center);
+      }
+      
+    }
+    @media @mobile {
+      display: flex;
+      flex-direction: column;
+      margin: 0 2rem; 
+      .destination {
+        width: 100%;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .btn {
+          .sign-up-btn(12px, 2.2rem, 1rem, center);
+          width: 100%;
+        
+        }
       }
     }
   }
